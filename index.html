@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nebula AI — Intelligent Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HERO (igual que antes, con partículas incluidas) -->
+<header id="hero">
+  <div class="hero-content fade-section">
+    <h1><span class="nebula">Nebula</span> AI</h1>
+    <p>Your intelligent assistant for modern creators.</p>
+    <button id="get-started">Get Started</button>
+    <div class="nebula-visual">
+      <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="nebulaGradient" gradientTransform="rotate(45)">
+            <stop offset="0%" stop-color="#00d4ff" />
+            <stop offset="100%" stop-color="#0066ff" />
+          </linearGradient>
+        </defs>
+        <circle cx="300" cy="300" r="200" fill="url(#nebulaGradient)" opacity="0.35">
+          <animate attributeName="r" values="180;200;180" dur="6s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="300" cy="300" r="140" fill="url(#nebulaGradient)" opacity="0.25">
+          <animate attributeName="r" values="120;140;120" dur="5s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="300" cy="300" r="100" fill="url(#nebulaGradient)" opacity="0.2">
+          <animate attributeName="r" values="90;100;90" dur="4s" repeatCount="indefinite" />
+        </circle>
+      </svg>
+      <div class="particles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- AI Chat Popup -->
+<div id="ai-chat-container">
+  <div id="ai-chat-header">Nebula AI Chat
+    <button id="close-chat-btn">&times;</button>
+  </div>
+  <div id="ai-chat-messages"></div>
+  <form id="ai-chat-form">
+    <input type="text" id="ai-chat-input" placeholder="Type your message..." autocomplete="off" />
+    <button type="submit" id="send-msg-btn">Send</button>
+  </form>
+</div>
+
+  <!-- FEATURES -->
+  <section id="features" class="fade-section">
+    <h2>Core Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1042/1042339.png" alt="AI Brain" />
+        <h3>Adaptive Intelligence</h3>
+        <p>Nebula learns your workflow and adapts seamlessly to your needs.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2882/2882835.png" alt="Lightning Speed" />
+        <h3>Lightning Speed</h3>
+        <p>Powered by next-generation AI, delivering instant results.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Security Shield" />
+        <h3>Privacy First</h3>
+        <p>Your data stays private — security is built at the core of Nebula.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="fade-section">
+    <h2>About Nebula</h2>
+    <p>
+      Nebula AI was created to empower creators, developers, and professionals
+      to work smarter, not harder. It blends automation, creativity, and precision
+      — helping you focus on what truly matters: innovation.
+    </p>
+    <button id="open-chat-btn">Chat with Nebula</button>
+  </section>
+
+  <!-- CONTACT -->
+  <footer id="contact" class="fade-section">
+    <h2>Get in Touch</h2>
+    <p>Interested in collaborating or learning more about Nebula?</p>
+    <a href="mailto:mauricioarias1515@gmail.com" class="contact-btn">Contact Me</a>
+    <p class="credit">©️ 2025 Mauricio Arias — Nebula AI</p>
+  </footer>
+
+  <!-- AI Chat Popup -->
+  <div id="ai-chat-container">
+    <div id="ai-chat-header">Nebula AI Chat
+      <button id="close-chat-btn">&times;</button>
+    </div>
+    <div id="ai-chat-messages"></div>
+    <form id="ai-chat-form">
+      <input type="text" id="ai-chat-input" placeholder="Type your message..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
